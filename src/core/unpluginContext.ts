@@ -15,9 +15,9 @@ export const createUnpluginContext = (options: Options = {}) => {
         map: null,
       }
     }
-    const reg = new RegExp(`console\\.(${options.consoleType?.join('|') || 'log'})\\(`, 'g')
+    const reg = new RegExp(`console\\.(${options.consoleType?.join('|') || 'log'})(.*);?`, 'g')
     s.replace(reg, '')
-    s.replace(/debugger/g, '')
+    s.replace(/debugger;?/g, '')
     return {
       code: s.toString(),
       map: s.generateMap({ source: id, includeContent: true }),

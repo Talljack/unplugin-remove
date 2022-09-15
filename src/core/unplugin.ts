@@ -7,8 +7,8 @@ export default createUnplugin<Options>(options => {
   return {
     name: 'unplugin-remove-console-debugger',
     enforce: 'post',
+    apply: 'build',
     transformInclude(id) {
-      console.log('id', id)
       return ctx.filter(id)
     },
     transform(code, id) {

@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "author": "Talljack",
+  "scripts": {
+    "serve": "MODE=development webpack serve",
+    "build": "rimraf dist && cross-env MODE=production webpack build",
+    "preview": "serve dist"
+  },
+  "devDependencies": {
+    "@types/webpack": "^5.28.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^3.0.2",
+    "serve": "^14.0.1",
+    "sucrase": "^3.25.0",
+    "unplugin-remove": "workspace:*",
+    "vue": "^3.2.39",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
