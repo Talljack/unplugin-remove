@@ -92,8 +92,8 @@ Remove({
   consoleType: ['log'],
 
   // filters for transforming targets
-  include: [/\.vue$/, /\.vue\?vue/],
-  exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+  include: [/\.[jt]sx?$/, /\.vue\??/],
+  exclude: [/node_modules/, /\.git/],
 })
 ```
 
