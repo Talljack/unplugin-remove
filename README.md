@@ -1,28 +1,15 @@
-# unplugin-starter
+# unplugin-remove
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-starter?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-starter)
-
-Starter template for [unplugin](https://github.com/unjs/unplugin).
-
-## Template Usage
-
-To use this template, clone it down using:
-
-```bash
-npx degit antfu/unplugin-starter my-unplugin
-```
-
-And do a global replace of `unplugin-starter` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+Auto remove console[log|warn|error|info|debug] and debugger in production
 
 ## Install
 
 ```bash
-npm i unplugin-starter
+pnpm i unplugin-remove -D
+
+or
+
+yarn add unplugin-remove -D
 ```
 
 <details>
@@ -30,11 +17,11 @@ npm i unplugin-starter
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-starter/vite'
+import viteRemove from 'unplugin-remove/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    viteRemove({ /* options */ }),
   ],
 })
 ```
@@ -48,11 +35,11 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Starter from 'unplugin-starter/rollup'
+import rollupRemove from 'unplugin-remove/rollup'
 
 export default {
   plugins: [
-    Starter({ /* options */ }),
+    rollupRemove({ /* options */ }),
   ],
 }
 ```
@@ -68,40 +55,8 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-starter/webpack')({ /* options */ })
-  ]
-}
-```
-
-<br></details>
-
-<details>
-<summary>Nuxt</summary><br>
-
-```ts
-// nuxt.config.js
-export default {
-  buildModules: [
-    ['unplugin-starter/nuxt', { /* options */ }],
-  ],
-}
-```
-
-> This module works for both Nuxt 2 and [Nuxt Vite](https://github.com/nuxt/vite)
-
-<br></details>
-
-<details>
-<summary>Vue CLI</summary><br>
-
-```ts
-// vue.config.js
-module.exports = {
-  configureWebpack: {
-    plugins: [
-      require('unplugin-starter/webpack')({ /* options */ }),
-    ],
-  },
+    process.env.MODE === 'production' ? require('unplugin-remove/webpack')({ /* options */ }) : null
+  ].filter(Boolean)
 }
 ```
 
@@ -113,11 +68,35 @@ module.exports = {
 ```ts
 // esbuild.config.js
 import { build } from 'esbuild'
-import Starter from 'unplugin-starter/esbuild'
+import esbuildRemove from 'unplugin-remove/esbuild'
 
 build({
-  plugins: [Starter()],
+  plugins: [esbuildRemove()],
 })
 ```
 
 <br></details>
+
+
+## Configuration
+
+The following show the default values of the configuration
+
+```ts
+Remove({
+  // don't remove console.([log|warn|error|info|debug]) and debugger these module
+  external: [],
+
+  // remove console type of these module
+  // enum: ['log', 'warn', 'error', 'info', 'debug']
+  consoleType: ['log'],
+
+  // filters for transforming targets
+  include: [/\.vue$/, /\.vue\?vue/],
+  exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+})
+```
+
+## License
+
+MIT License © 2022-PRESENT [Talljack](https://github.com/talljack)
