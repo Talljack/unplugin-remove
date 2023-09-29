@@ -1,7 +1,12 @@
-import { basename, resolve } from 'path'
+import { basename, resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
 import { promises as fs } from 'fs'
 import fg from 'fast-glob'
 import chalk from 'chalk'
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = dirname(__filename);
 
 async function run() {
   const files = await fg('*.js', {
