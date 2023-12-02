@@ -1,7 +1,7 @@
 {
   "name": "unplugin-remove",
   "type": "module",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "packageManager": "pnpm@8.11.0",
   "description": "Register global imports on demand for Vite and Webpack",
   "license": "MIT",
@@ -18,7 +18,9 @@
     "vite",
     "webpack",
     "rollup",
-    "transform"
+    "transform",
+    "remove debugger",
+    "remove console"
   ],
   "exports": {
     ".": {
