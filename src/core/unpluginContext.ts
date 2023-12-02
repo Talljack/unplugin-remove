@@ -16,7 +16,7 @@ export const createUnpluginContext = (options: Options = {}) => {
       }
     }
     const reg = new RegExp(
-      `console\\.(${options.consoleType?.join('|') || 'log'})\\s*\\([\\s\\S]*?\\)(?:\\s*;)?\\s*\\)?;?`,
+      `(?<!=>\\s*)console\\.(${options.consoleType?.join('|') || 'log'})\\s*\\([\\s\\S]*?\\)(?:\\s*;)?\\s*\\)?;?`,
       'g',
     )
     s.replace(reg, '')
