@@ -4,4 +4,7 @@ import unpluginRemoveVite from 'unplugin-remove/vite'
 
 export default defineConfig({
   plugins: [Inspect(), unpluginRemoveVite()],
+  build: {
+    sourcemap: true,
+  },
 })

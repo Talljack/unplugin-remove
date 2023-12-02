@@ -6,7 +6,7 @@ export default createUnplugin<Options>(options => {
   const ctx = createUnpluginContext(options ?? defaultOptions)
   return {
     name: 'unplugin-remove-console-debugger',
-    enforce: 'post',
+    enforce: 'post' as const,
     apply: 'build',
     transformInclude(id) {
       return ctx.filter(id)
