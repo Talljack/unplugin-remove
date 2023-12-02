@@ -1,6 +1,6 @@
 # unplugin-remove
 
-Auto remove console[log|warn|error|info|debug] and debugger in production
+Auto remove `console[log|warn|error|info|debug]` and `debugger` in production mode.
 
 ## Install
 
