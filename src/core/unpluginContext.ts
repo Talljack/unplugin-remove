@@ -2,6 +2,7 @@ import { createFilter } from '@rollup/pluginutils'
 import MagicString from 'magic-string'
 import type { Options } from '../types'
 import { getAbsoluteFilePaths } from './utils'
+
 export const createUnpluginContext = (options: Options = {}) => {
   const filter = createFilter(
     options.include || [/\.[jt]sx?$/, /\.vue$/, /\.vue\?vue/, /\.svelte$/],

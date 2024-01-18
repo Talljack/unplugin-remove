@@ -67,7 +67,7 @@
     "build": "tsup",
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "play:vite": "npm -C playground/vite run dev",
     "play:webpack": "npm -C playground/webpack run serve",
     "prepublishOnly": "npm run build",
