@@ -94,8 +94,8 @@ importers:
         specifier: ^5.5.0
         version: 5.5.3(webpack@5.89.0)
       rimraf:
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^5.0.5
+        version: 5.0.5
       serve:
         specifier: ^14.0.1
         version: 14.2.1
