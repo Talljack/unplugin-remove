@@ -68,7 +68,7 @@ importers:
         version: 1.2.2(@types/node@20.11.15)
       webpack:
         specifier: ^5.90.0
-        version: 5.90.0(esbuild@0.19.8)
+        version: 5.90.1(esbuild@0.19.8)
 
   playground/vite:
     devDependencies:
@@ -1292,7 +1292,7 @@ packages:
     dependencies:
       '@types/node': 20.11.6
       tapable: 2.2.1
-      webpack: 5.89.0(esbuild@0.19.8)(webpack-cli@4.10.0)
+      webpack: 5.90.0(esbuild@0.19.8)(webpack-cli@4.10.0)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -3760,7 +3760,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.24.0
+      terser: 5.27.0
     dev: true
 
   /html-webpack-plugin@5.6.0(webpack@5.89.0):
@@ -5764,7 +5764,32 @@ packages:
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.27.0
-      webpack: 5.90.0(esbuild@0.19.8)
+      webpack: 5.90.0(esbuild@0.19.8)(webpack-cli@4.10.0)
+    dev: true
+
+  /terser-webpack-plugin@5.3.10(esbuild@0.19.8)(webpack@5.90.1):
+    resolution: {integrity: sha512-BKFPWlPDndPs+NGGCr1U59t0XScL5317Y0UReNrHaw9/FwhPENlq6bfgs+4yPfyP51vqC1bQ4rp1EfXW5ZSH9w==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      '@swc/core': '*'
+      esbuild: '*'
+      uglify-js: '*'
+      webpack: ^5.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      esbuild:
+        optional: true
+      uglify-js:
+        optional: true
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.20
+      esbuild: 0.19.8
+      jest-worker: 27.5.1
+      schema-utils: 3.3.0
+      serialize-javascript: 6.0.1
+      terser: 5.27.0
+      webpack: 5.90.1(esbuild@0.19.8)
     dev: true
 
   /terser-webpack-plugin@5.3.9(esbuild@0.19.8)(webpack@5.89.0):
@@ -5788,19 +5813,8 @@ packages:
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
-      terser: 5.24.0
+      terser: 5.27.0
       webpack: 5.89.0(esbuild@0.19.8)(webpack-cli@4.10.0)
-    dev: true
-
-  /terser@5.24.0:
-    resolution: {integrity: sha512-ZpGR4Hy3+wBEzVEnHvstMvqpD/nABNelQn/z2r0fjVWGQsN3bpOLzQlqDxmb4CDZnXq5lpjnQ+mHQLAOpfM5iw==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.5
-      acorn: 8.11.3
-      commander: 2.20.3
-      source-map-support: 0.5.21
     dev: true
 
   /terser@5.27.0:
@@ -6506,7 +6520,7 @@ packages:
       - uglify-js
     dev: true
 
-  /webpack@5.90.0(esbuild@0.19.8):
+  /webpack@5.90.0(esbuild@0.19.8)(webpack-cli@4.10.0):
     resolution: {integrity: sha512-bdmyXRCXeeNIePv6R6tGPyy20aUobw4Zy8r0LUS2EWO+U+Ke/gYDgsCh7bl5rB6jPpr4r0SZa6dPxBxLooDT3w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -6538,6 +6552,47 @@ packages:
       schema-utils: 3.3.0
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.10(esbuild@0.19.8)(webpack@5.90.0)
+      watchpack: 2.4.0
+      webpack-cli: 4.10.0(webpack-dev-server@4.15.1)(webpack@5.89.0)
+      webpack-sources: 3.2.3
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+    dev: true
+
+  /webpack@5.90.1(esbuild@0.19.8):
+    resolution: {integrity: sha512-SstPdlAC5IvgFnhiRok8hqJo/+ArAbNv7rhU4fnWGHNVfN59HSQFaxZDSAL3IFG2YmqxuRs+IU33milSxbPlog==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    peerDependencies:
+      webpack-cli: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+    dependencies:
+      '@types/eslint-scope': 3.7.7
+      '@types/estree': 1.0.5
+      '@webassemblyjs/ast': 1.11.6
+      '@webassemblyjs/wasm-edit': 1.11.6
+      '@webassemblyjs/wasm-parser': 1.11.6
+      acorn: 8.11.3
+      acorn-import-assertions: 1.9.0(acorn@8.11.3)
+      browserslist: 4.22.2
+      chrome-trace-event: 1.0.3
+      enhanced-resolve: 5.15.0
+      es-module-lexer: 1.4.1
+      eslint-scope: 5.1.1
+      events: 3.3.0
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.11
+      json-parse-even-better-errors: 2.3.1
+      loader-runner: 4.3.0
+      mime-types: 2.1.35
+      neo-async: 2.6.2
+      schema-utils: 3.3.0
+      tapable: 2.2.1
+      terser-webpack-plugin: 5.3.10(esbuild@0.19.8)(webpack@5.90.1)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
