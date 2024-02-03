@@ -85,7 +85,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
-    "@types/node": "^20.11.14",
+    "@types/node": "^20.11.16",
     "bumpp": "^9.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -100,6 +100,6 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
     "vitest": "^1.2.2",
-    "webpack": "^5.90.0"
+    "webpack": "^5.90.1"
   }
 }
