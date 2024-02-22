@@ -15,7 +15,7 @@
     "sucrase": "^3.25.0",
     "unplugin-remove": "workspace:*",
     "vue": "^3.4.19",
-    "webpack": "^5.74.0",
+    "webpack": "^5.90.3",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^5.0.2"
   }
