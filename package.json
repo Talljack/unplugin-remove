@@ -1,9 +1,9 @@
 {
   "name": "unplugin-remove",
   "type": "module",
-  "version": "0.1.6",
-  "packageManager": "pnpm@8.14.1",
-  "description": "Register global imports on demand for Vite and Webpack",
+  "version": "0.1.7",
+  "packageManager": "pnpm@8.15.3",
+  "description": "Plugin to remove console.xx and debugger for Vite & Webpack & Esbuild & Rollup",
   "license": "MIT",
   "homepage": "https://github.com/Talljack/unplugin-remove#readme",
   "repository": {
@@ -18,9 +18,12 @@
     "vite",
     "webpack",
     "rollup",
+    "esbuild",
     "transform",
     "remove debugger",
-    "remove console"
+    "remove console",
+    "console",
+    "debugger"
   ],
   "exports": {
     ".": {
