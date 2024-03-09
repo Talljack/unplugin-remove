@@ -6,6 +6,7 @@ Auto remove `console[log|warn|error|info|debug]` and `debugger` in production mo
 <img src="https://img.shields.io/npm/dm/unplugin-remove" />
 <img src="https://img.shields.io/github/last-commit/Talljack/unplugin-remove
 ">
+<img src="https://codecov.io/gh/Talljack/unplugin-remove/graph/badge.svg?token=KI043GVTMM"/>
 </div>
 
 
