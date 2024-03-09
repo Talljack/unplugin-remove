@@ -80,7 +80,7 @@ build({
 
 ## Configuration
 
-The following show the default values of the configuration
+The following shows the default values of the configuration
 
 ```ts
 Remove({
@@ -96,6 +96,10 @@ Remove({
   exclude: [/node_modules/, /\.git/],
 })
 ```
+
+## CHANGELOG
+
+You can see [CHANGELOG](./CHANGELOG.md) here.
 
 ## License
 

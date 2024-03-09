@@ -1,7 +1,6 @@
 import { createFilter } from '@rollup/pluginutils'
-import MagicString from 'magic-string'
 import type { Options } from '../types'
-import { getAbsoluteFilePaths } from './utils'
+import { getAbsoluteFilePaths, removeConsoleLogs } from './utils'
 
 export const createUnpluginContext = (options: Options = {}) => {
   const filter = createFilter(
@@ -9,23 +8,14 @@ export const createUnpluginContext = (options: Options = {}) => {
     options.exclude || [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
   )
   const transform = (code: string, id: string) => {
-    const s = new MagicString(code)
     if (options.external && getAbsoluteFilePaths(options.external).includes(id)) {
       return {
         code,
         map: null,
       }
     }
-    const reg = new RegExp(
-      `(?<![=>|&|\||\?|:]\\s*)console\\.(${options.consoleType?.join('|') || 'log'})\\s*\\([\\s\\S]*?\\)(?:\\s*;)?\\s*\\)?;?`,
-      'g',
-    )
-    s.replace(reg, '')
-    s.replace(/debugger;?/g, '')
-    return {
-      code: s.toString(),
-      map: s.generateMap({ source: id, includeContent: true }),
-    }
+    code = code.replace(/debugger;/g, '')
+    return removeConsoleLogs(code, options.consoleType, true)
   }
   return {
     filter,
