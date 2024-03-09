@@ -2,6 +2,13 @@
 
 Auto remove `console[log|warn|error|info|debug]` and `debugger` in production mode.
 
+<div>
+<img src="https://img.shields.io/npm/dm/unplugin-remove" />
+<img src="https://img.shields.io/github/last-commit/Talljack/unplugin-remove
+">
+</div>
+
+
 ## Install
 
 ```bash
