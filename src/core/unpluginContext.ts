@@ -1,6 +1,6 @@
 import { createFilter } from '@rollup/pluginutils'
 import type { Options } from '../types'
-import { getAbsoluteFilePaths, removeConsoleLogs } from './utils'
+import { getAbsoluteFilePaths, removeConsoleLogs } from '../utils'
 
 export const createUnpluginContext = (options: Options = {}) => {
   const filter = createFilter(

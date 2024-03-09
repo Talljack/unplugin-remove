@@ -1,6 +1,8 @@
 import { describe, expect, it, vi } from 'vitest'
-import { removeConsoleLogs } from '../src/core/utils'
+import path from 'node:path'
+import { removeConsoleLogs, getAbsoluteFilePaths } from '../src/utils'
 import type { Options } from '../src/types'
+
 
 describe('console.log', () => {
   const consoleType :Options['consoleType'] = ['log']
@@ -60,5 +62,12 @@ describe('console.[log, warn]', () => {
     const fn = vi.fn((val: number) => 123 + val)
     const str = `console.warn("🚀 ~ onUnmounted ~ removeCardServiceSubscription(cardServicesSubscription):", ${fn(1)})`
     expect(removeConsoleLogs(str, consoleType)).toBe('')
+  })
+})
+
+describe('test getAbsoluteFilePaths', () => {
+  it('absolute path', () => {
+    const filePaths = ['src/index.ts']
+    expect(getAbsoluteFilePaths(filePaths)).toEqual([path.resolve(process.cwd(), 'src/index.ts')])
   })
 })
