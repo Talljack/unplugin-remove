@@ -12,7 +12,7 @@ Auto remove `console[log|warn|error|info|debug]` and `debugger` in production mo
 ## Install
 
 ```bash
-pnpm i unplugin-remove -D
+[npm|pnpm] i unplugin-remove -D
 
 or
 
