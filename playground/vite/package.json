@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "unplugin-remove": "workspace:*",
-    "vite": "^5.1.4",
+    "vite": "^5.1.5",
     "vite-plugin-inspect": "^0.8.3"
   }
 }

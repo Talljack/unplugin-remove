@@ -1,8 +1,8 @@
 {
   "name": "unplugin-remove",
   "type": "module",
-  "version": "0.1.7",
-  "packageManager": "pnpm@8.15.3",
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.15.4",
   "description": "Plugin to remove console.xx and debugger for Vite & Webpack & Esbuild & Rollup",
   "license": "MIT",
   "homepage": "https://github.com/Talljack/unplugin-remove#readme",
@@ -71,6 +71,7 @@
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
     "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "play:vite": "npm -C playground/vite run dev",
     "play:webpack": "npm -C playground/webpack run serve",
     "prepublishOnly": "npm run build",
@@ -81,10 +82,15 @@
   "dependencies": {
     "@rollup/pluginutils": "^5.1.0",
     "magic-string": "^0.30.8",
-    "unplugin": "^1.8.3"
+    "unplugin": "^1.9.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
+    "@babel/core": "^7.24.0",
+    "@babel/generator": "^7.23.6",
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "@babel/types": "^7.24.0",
     "@types/node": "^20.11.25",
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
