@@ -10,7 +10,7 @@ document.getElementById('app')!.innerHTML = `__UNPLUGIN__${count}`
 
 console.log('00000')
 const a = true;
-
+// https://github.com/Talljack/unplugin-remove/issues/8
 !a && console.log('1111111')
 
 a || console.log(2222)
@@ -24,6 +24,11 @@ function test0() {
 
 console.log('hello world')
 
-const test = () => console.log(123)
+const test = (val: number) => {
+  return 123 + val;
+}
 
-test()
+console.log('🚀 ~ test test: test:()', test(10));
+
+// https://github.com/Talljack/unplugin-remove/issues/82
+console.log(`🚀 ~ onUnmounted ~ removeCardServiceSubscription(cardServicesSubscription): ${test(1)}`)
