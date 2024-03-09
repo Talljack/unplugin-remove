@@ -4,7 +4,7 @@
 
 ### Fixes
 
-- Fix console bug when there are parentheses in parameters.
+- Fix console bug when there are parentheses in parameters [issue](https://github.com/Talljack/unplugin-remove/issues/82).
 
 ### Features
 
