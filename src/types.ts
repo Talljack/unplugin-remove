@@ -1,4 +1,5 @@
 import type { FilterPattern } from '@rollup/pluginutils'
+
 export interface Options {
   /**
    * don't remove console.log and debugger these module
