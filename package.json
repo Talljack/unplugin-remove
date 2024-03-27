@@ -86,7 +86,7 @@
     "unplugin": "^1.10.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.9.0",
+    "@antfu/eslint-config": "^2.11.1",
     "@babel/core": "^7.24.3",
     "@babel/generator": "^7.24.1",
     "@babel/parser": "^7.24.1",
@@ -103,11 +103,11 @@
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "rollup": "^4.13.0",
+    "rollup": "^4.13.1",
     "tsup": "^8.0.2",
     "typescript": "^5.4.3",
     "vite": "^5.2.6",
     "vitest": "^1.4.0",
-    "webpack": "^5.90.3"
+    "webpack": "^5.91.0"
   }
 }
