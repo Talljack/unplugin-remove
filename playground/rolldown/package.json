@@ -1,0 +1,21 @@
+{
+  "name": "rolldown",
+  "version": "1.0.0",
+  "description": "unplugin of rolldown demo",
+  "type": "module",
+  "scripts": {
+    "dev": "MODE=development rolldown",
+    "build": "MODE=production rolldown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rolldown": "^0.10.0",
+    "unplugin-remove": "workspace:^"
+  },
+  "devDependencies": {
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  }
+}

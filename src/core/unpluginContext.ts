@@ -14,7 +14,7 @@ export const createUnpluginContext = (options: Options = {}) => {
         map: null,
       }
     }
-    code = code.replace(/debugger;/g, '')
+    code = code.replace(/debugger;?/g, '')
     return removeConsoleLogs(code, options.consoleType, true)
   }
   return {
