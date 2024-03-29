@@ -20,6 +20,10 @@ or
 yarn add unplugin-remove -D
 ```
 
+## Demo
+
+Example: [`playground/`](./playground/)
+
 <details>
 <summary>Vite</summary><br>
 
@@ -33,8 +37,6 @@ export default defineConfig({
   ],
 })
 ```
-
-Example: [`playground/`](./playground/)
 
 <br></details>
 
