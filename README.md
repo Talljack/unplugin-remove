@@ -20,6 +20,10 @@ or
 yarn add unplugin-remove -D
 ```
 
+## Demo
+
+Example: [`playground/`](./playground/)
+
 <details>
 <summary>Vite</summary><br>
 
@@ -33,8 +37,6 @@ export default defineConfig({
   ],
 })
 ```
-
-Example: [`playground/`](./playground/)
 
 <br></details>
 
@@ -80,6 +82,51 @@ import esbuildRemove from 'unplugin-remove/esbuild'
 
 build({
   plugins: [esbuildRemove()],
+})
+```
+
+<br></details>
+
+
+<details>
+<summary>Rspack  (
+  <g-emoji class="g-emoji" alias="warning">⚠️</g-emoji>
+   experimental)</summary><br>
+
+```ts
+// rspack.config.js
+const RspackPlugin = require('unplugin-remove/rspack').default;
+
+module.exports = {
+  plugins:[
+    new rspack.DefinePlugin({
+			"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+		}),
+    RspackPlugin(),
+  ]
+}
+```
+
+<br></details>
+
+<details>
+<summary>
+  Rolldown
+  (
+  <g-emoji class="g-emoji" alias="warning">⚠️</g-emoji>
+   experimental)
+</summary>
+<br>
+
+```ts
+// rolldown.config.js
+import { defineConfig } from 'rolldown'
+import Rolldown from 'unplugin-remove/rolldown'
+
+export default defineConfig({
+  plugins:[
+    process.env.MODE === 'production' ? Rolldown() : null,
+  ]
 })
 ```
 

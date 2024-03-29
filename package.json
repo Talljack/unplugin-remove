@@ -1,7 +1,7 @@
 {
   "name": "unplugin-remove",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@8.15.5",
   "description": "Plugin to remove console.xx and debugger for Vite & Webpack & Esbuild & Rollup",
   "license": "MIT",
@@ -19,6 +19,8 @@
     "webpack",
     "rollup",
     "esbuild",
+    "rspack",
+    "rolldown",
     "transform",
     "remove debugger",
     "remove console",
@@ -27,24 +29,32 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     },
     "./vite": {
-      "require": "./dist/vite.js",
+      "require": "./dist/vite.cjs",
       "import": "./dist/vite.js"
     },
     "./webpack": {
-      "require": "./dist/webpack.js",
+      "require": "./dist/webpack.cjs",
       "import": "./dist/webpack.js"
     },
     "./rollup": {
-      "require": "./dist/rollup.js",
+      "require": "./dist/rollup.cjs",
       "import": "./dist/rollup.js"
     },
     "./esbuild": {
-      "require": "./dist/esbuild.js",
+      "require": "./dist/esbuild.cjs",
       "import": "./dist/esbuild.js"
+    },
+    "./rspack": {
+      "require": "./dist/rspack.cjs",
+      "import": "./dist/rspack.js"
+    },
+    "./rolldown": {
+      "require": "./dist/rolldown.cjs",
+      "import": "./dist/rolldown.js"
     },
     "./types": {
       "require": "./dist/types.js",
@@ -106,7 +116,7 @@
     "rollup": "^4.13.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.3",
-    "vite": "^5.2.6",
+    "vite": "^5.2.7",
     "vitest": "^1.4.0",
     "webpack": "^5.91.0"
   }
