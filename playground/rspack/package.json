@@ -1,7 +1,7 @@
 {
   "name": "rspack-react-ts-starter",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "NODE_ENV=development rspack serve",
     "build": "NODE_ENV=production rspack build"
