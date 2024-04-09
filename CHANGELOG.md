@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.0.2 - 2024-04-09
+
+### Fixes
+
+- Fix Rollup sourcemap incorrect when build [issue](https://github.com/Talljack/unplugin-remove/issues/139).
+
+### Features
+
+- Add Vitest testes of remove debugger function.
+
 ## 1.0.1 - 2024-03-29
 
 ### Features
