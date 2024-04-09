@@ -1,6 +1,6 @@
 import { createFilter } from '@rollup/pluginutils'
 import type { Options } from '../types'
-import { getAbsoluteFilePaths, removeConsoleLogs } from '../utils'
+import { getAbsoluteFilePaths, removeConsoleLogs, removeDebugger } from '../utils'
 
 export const createUnpluginContext = (options: Options = {}) => {
   const filter = createFilter(
@@ -14,7 +14,7 @@ export const createUnpluginContext = (options: Options = {}) => {
         map: null,
       }
     }
-    code = code.replace(/debugger;?/g, '')
+    code = removeDebugger(code)
     return removeConsoleLogs(code, options.consoleType, true)
   }
   return {

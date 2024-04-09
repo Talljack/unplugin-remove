@@ -97,16 +97,15 @@
     "coverage": "vitest run --coverage --coverage.include=src/utils"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.1.0",
-    "magic-string": "^0.30.9",
-    "unplugin": "^1.10.1"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.13.0",
     "@babel/core": "^7.24.4",
     "@babel/generator": "^7.24.4",
     "@babel/parser": "^7.24.4",
     "@babel/traverse": "^7.24.1",
+    "@rollup/pluginutils": "^5.1.0",
+    "unplugin": "^1.10.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.13.0",
     "@babel/types": "^7.24.0",
     "@types/node": "^20.12.6",
     "@vitest/coverage-v8": "^1.4.0",

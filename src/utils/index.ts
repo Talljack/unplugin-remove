@@ -36,3 +36,7 @@ export function removeConsoleLogs(code: string, types: Options['consoleType'], s
     sourceMaps,
   })
 }
+
+export function removeDebugger(code: string) {
+  return code.replace(/debugger;?/g, '')
+}
