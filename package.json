@@ -1,7 +1,7 @@
 {
   "name": "unplugin-remove",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@8.15.5",
   "description": "Plugin to remove console.xx and debugger for Vite & Webpack & Esbuild & Rollup",
   "license": "MIT",
