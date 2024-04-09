@@ -9,10 +9,10 @@ export default defineConfig({
     sourcemap: true,
   },
   test: {
-		coverage: {
-			enabled: true,
-			provider: 'v8',
-			reporter: ['text', 'json', 'html'],
-		},
-  }
+    coverage: {
+      enabled: true,
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+    },
+  },
 })

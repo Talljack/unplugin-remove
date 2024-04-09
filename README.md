@@ -9,7 +9,6 @@ Auto remove `console[log|warn|error|info|debug]` and `debugger` in **production*
 <img src="https://codecov.io/gh/Talljack/unplugin-remove/graph/badge.svg?token=KI043GVTMM"/>
 </div>
 
-
 ## Install
 
 ```bash
@@ -56,7 +55,6 @@ export default {
 
 <br></details>
 
-
 <details>
 <summary>Webpack</summary><br>
 
@@ -87,7 +85,6 @@ build({
 
 <br></details>
 
-
 <details>
 <summary>Rspack  (
   <g-emoji class="g-emoji" alias="warning">⚠️</g-emoji>
@@ -95,13 +92,13 @@ build({
 
 ```ts
 // rspack.config.js
-const RspackPlugin = require('unplugin-remove/rspack').default;
+const RspackPlugin = require('unplugin-remove/rspack').default
 
 module.exports = {
-  plugins:[
+  plugins: [
     new rspack.DefinePlugin({
-			"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
-		}),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
     RspackPlugin(),
   ]
 }
@@ -124,14 +121,13 @@ import { defineConfig } from 'rolldown'
 import Rolldown from 'unplugin-remove/rolldown'
 
 export default defineConfig({
-  plugins:[
+  plugins: [
     process.env.MODE === 'production' ? Rolldown() : null,
   ]
 })
 ```
 
 <br></details>
-
 
 ## Configuration
 

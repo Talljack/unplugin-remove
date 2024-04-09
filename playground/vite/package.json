@@ -2,7 +2,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "nodemon -w '../src/**/*.ts' -e .ts -x vite"
+    "dev": "nodemon -w '../src/**/*.ts' -e .ts -x vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "unplugin-remove": "workspace:*",

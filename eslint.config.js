@@ -6,5 +6,7 @@ export default antfu({
     'antfu/top-level-function': 'off',
     'style/arrow-parens': 'off',
     'node/prefer-global/process': 'off',
-  }
+    'no-debugger': 'off',
+    'no-console': 'off',
+  },
 })
