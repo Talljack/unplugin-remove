@@ -120,8 +120,8 @@ importers:
         specifier: 0.5.9
         version: 0.5.9
       '@rspack/plugin-react-refresh':
-        specifier: 0.5.9
-        version: 0.5.9(react-refresh@0.14.0)
+        specifier: 0.6.0
+        version: 0.6.0(react-refresh@0.14.0)
       '@types/react':
         specifier: ^18.2.74
         version: 18.2.74
@@ -1629,8 +1629,8 @@ packages:
       - webpack-cli
     dev: true
 
-  /@rspack/plugin-react-refresh@0.5.9(react-refresh@0.14.0):
-    resolution: {integrity: sha512-jsXA/8v4OaNLKo14+jqXKzAOKXWJs06ld6rzW97K9m2Q8hLd88jHiElxAgFsIiaSybu7tOs3ZKhhG/sGs4JspQ==}
+  /@rspack/plugin-react-refresh@0.6.0(react-refresh@0.14.0):
+    resolution: {integrity: sha512-a8iEsSHozQ5jwRb0LjxFbi1FC2rIuDo6z4TRaZtQsaGir1E+mO4z7yff3J2DA7jxH8bp4ecqLeUXBBoRTiGzlw==}
     peerDependencies:
       react-refresh: '>=0.10.0 <1.0.0'
     peerDependenciesMeta:
