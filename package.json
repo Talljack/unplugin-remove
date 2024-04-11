@@ -105,7 +105,7 @@
     "unplugin": "^1.10.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.13.2",
+    "@antfu/eslint-config": "^2.13.3",
     "@babel/types": "^7.24.0",
     "@types/node": "^20.12.7",
     "@vitest/coverage-v8": "^1.4.0",
@@ -120,7 +120,7 @@
     "rimraf": "^5.0.5",
     "rollup": "^4.14.1",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vite": "^5.2.8",
     "vitest": "^1.4.0",
     "webpack": "^5.91.0"
