@@ -12,10 +12,10 @@
     "unplugin-remove": "workspace:^"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.6.0",
-    "@rspack/core": "0.6.0",
-    "@rspack/plugin-react-refresh": "^0.6.0",
-    "@types/react": "^18.2.74",
+    "@rspack/cli": "^0.6.1",
+    "@rspack/core": "^0.6.1",
+    "@rspack/plugin-react-refresh": "^0.6.1",
+    "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
     "react-refresh": "^0.14.0"
   }
