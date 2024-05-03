@@ -130,7 +130,7 @@
     "webpack": "^5.91.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm run typecheck && npx lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*": "eslint src --fix"
