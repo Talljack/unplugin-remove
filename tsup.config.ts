@@ -8,7 +8,7 @@ export default <Options>{
   banner: ({ format }) => {
     if (format === 'esm') {
       return {
-        js: `import {createRequire as __createRequire} from 'module';var require=__createRequire(import\.meta.url);`,
+        js: `import {createRequire as __createRequire} from 'module';var require=__createRequire(import.meta.url);`,
       }
     }
   },
