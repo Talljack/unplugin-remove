@@ -6,11 +6,17 @@ import t from '@babel/types'
 import type { Options } from '../types'
 
 export const getAbsoluteFilePaths = (filePaths: string[]) => {
-  return filePaths.map(filePath => {
+  return filePaths.map((filePath) => {
     return path.isAbsolute(filePath) ? filePath : path.resolve(process.cwd(), filePath)
   })
 }
 
+/**
+ *
+ * @param code
+ * @param types
+ * @param sourceMaps
+ */
 export function removeConsoleLogs(code: string, types: Options['consoleType'], sourceMaps = false) {
   const ast = parser.parse(code, {
     sourceType: 'unambiguous',
@@ -37,6 +43,10 @@ export function removeConsoleLogs(code: string, types: Options['consoleType'], s
   })
 }
 
+/**
+ *
+ * @param code
+ */
 export function removeDebugger(code: string) {
   return code.replace(/debugger;?/g, '')
 }
