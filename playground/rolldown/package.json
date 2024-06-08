@@ -15,7 +15,7 @@
     "unplugin-remove": "workspace:^"
   },
   "devDependencies": {
-    "tslib": "^2.6.2",
+    "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   }
 }
