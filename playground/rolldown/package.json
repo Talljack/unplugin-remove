@@ -11,7 +11,7 @@
     "build": "MODE=production rolldown"
   },
   "dependencies": {
-    "rolldown": "^0.10.2",
+    "rolldown": "^0.10.4",
     "unplugin-remove": "workspace:^"
   },
   "devDependencies": {
