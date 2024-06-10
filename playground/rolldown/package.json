@@ -11,11 +11,11 @@
     "build": "MODE=production rolldown"
   },
   "dependencies": {
-    "rolldown": "^0.10.2",
+    "rolldown": "^0.10.4",
     "unplugin-remove": "workspace:^"
   },
   "devDependencies": {
-    "tslib": "^2.6.2",
+    "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   }
 }
