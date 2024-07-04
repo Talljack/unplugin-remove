@@ -133,6 +133,6 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "*": "eslint src --fix"
   }
 }
