@@ -10,11 +10,11 @@
     "@types/webpack": "^5.28.5",
     "cross-env": "^7.0.3",
     "html-webpack-plugin": "^5.6.0",
-    "rimraf": "^5.0.7",
+    "rimraf": "^5.0.8",
     "serve": "^14.2.3",
     "sucrase": "^3.35.0",
     "unplugin-remove": "workspace:*",
-    "vue": "^3.4.30",
+    "vue": "^3.4.31",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
