@@ -23,4 +23,11 @@ export interface Options {
    * @default [/node_modules/, /\.git/]
    */
   exclude?: FilterPattern
+
+  /**
+   * Options for @babel/generator
+   * @see https://babeljs.io/docs/en/babel-generator sourceMaps
+   * @default true
+   */
+  sourceMaps?: boolean
 }

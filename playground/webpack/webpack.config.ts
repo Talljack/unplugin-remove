@@ -7,8 +7,9 @@ const config: Configuration = {
   entry: {
     app: './src/main.ts',
   },
+  devtool: 'source-map',
   plugins: [
-    process.env.MODE === 'production' ? WebpackRemove() : null,
+    process.env.MODE === 'production' ? WebpackRemove({}) : null,
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'public/index.html',

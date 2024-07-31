@@ -17,7 +17,7 @@ export const getAbsoluteFilePaths = (filePaths: string[]) => {
  * @param types
  * @param sourceMaps
  */
-export function removeConsoleLogs(code: string, types: Options['consoleType'], sourceMaps = false) {
+export function removeConsoleLogs(code: string, types: Options['consoleType'], sourceMaps = true) {
   const ast = parser.parse(code, {
     sourceType: 'unambiguous',
     plugins: ['jsx'],

@@ -7,8 +7,8 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "dev": "MODE=development rolldown",
-    "build": "MODE=production rolldown"
+    "dev": "MODE=development rolldown -c rolldown.config.js",
+    "build": "MODE=production rolldown -c rolldown.config.js"
   },
   "dependencies": {
     "rolldown": "^0.11.0",

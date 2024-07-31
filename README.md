@@ -63,8 +63,8 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    process.env.MODE === 'production' ? require('unplugin-remove/webpack')({ /* options */ }) : null
-  ].filter(Boolean)
+    process.env.MODE === 'production' ? require('unplugin-remove/webpack')({ /* options */ }) : null,
+  ].filter(Boolean),
 }
 ```
 
@@ -97,10 +97,10 @@ const RspackPlugin = require('unplugin-remove/rspack').default
 module.exports = {
   plugins: [
     new rspack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     }),
     RspackPlugin(),
-  ]
+  ],
 }
 ```
 
@@ -123,7 +123,7 @@ import Rolldown from 'unplugin-remove/rolldown'
 export default defineConfig({
   plugins: [
     process.env.MODE === 'production' ? Rolldown() : null,
-  ]
+  ],
 })
 ```
 
@@ -145,6 +145,8 @@ Remove({
   // filters for transforming targets
   include: [/\.[jt]sx?$/, /\.vue\??/],
   exclude: [/node_modules/, /\.git/],
+  // transform source code
+  sourceMaps: true,
 })
 ```
 
