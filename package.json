@@ -108,7 +108,7 @@
   },
   "devDependencies": {
     "@babel/types": "7.25.0",
-    "@types/node": "20.14.12",
+    "@types/node": "22.0.2",
     "@vitest/coverage-v8": "2.0.4",
     "bumpp": "^9.4.1",
     "eslint": "9.8.0",
