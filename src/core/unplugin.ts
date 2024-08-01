@@ -1,6 +1,5 @@
 import { createUnplugin } from 'unplugin'
 import type { Options } from '../types'
-import { getAbsoluteFilePaths } from '../utils'
 import { defaultOptions } from './constant'
 import { createUnpluginContext } from './unpluginContext'
 
@@ -15,8 +14,9 @@ export default createUnplugin<Options>((options?: Options) => {
       return ctx.filter(id)
     },
     transform(code, id) {
-      if (!options.external?.length || (options.external.length > 0 && !getAbsoluteFilePaths(options.external).includes(id)))
-        return ctx.transform(code)
+      // if (!options.external?.length || (options.external.length > 0 && !getAbsoluteFilePaths(options.external).includes(id)))
+      //   return ctx.transform(code)
+      return ctx.transform(code, id)
     },
   }
 })

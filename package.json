@@ -104,11 +104,12 @@
     "@babel/parser": "7.25.0",
     "@babel/traverse": "7.25.0",
     "@rollup/pluginutils": "^5.1.0",
+    "magic-string": "^0.30.11",
     "unplugin": "1.12.0"
   },
   "devDependencies": {
     "@babel/types": "7.25.0",
-    "@types/node": "22.0.0",
+    "@types/node": "22.0.2",
     "@vitest/coverage-v8": "2.0.4",
     "bumpp": "^9.4.1",
     "eslint": "9.8.0",

@@ -38,9 +38,13 @@ export function removeConsoleLogs(code: string, types: Options['consoleType'], s
     },
   })
   const mergedGenerator = generator.default ?? generator
-  return mergedGenerator(ast, {
+  const { code: generatorCode, map } = mergedGenerator(ast, {
     sourceMaps,
   })
+  return {
+    generatorCode,
+    map,
+  }
 }
 
 /**
