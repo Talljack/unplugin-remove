@@ -144,9 +144,7 @@ Remove({
 
   // filters for transforming targets
   include: [/\.[jt]sx?$/, /\.vue\??/],
-  exclude: [/node_modules/, /\.git/],
-  // transform source code
-  sourceMaps: true,
+  exclude: [/node_modules/, /\.git/]
 })
 ```
 
