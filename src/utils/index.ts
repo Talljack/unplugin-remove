@@ -17,7 +17,7 @@ export const getAbsoluteFilePaths = (filePaths: string[]) => {
  * @param types
  * @param sourceMaps
  */
-export function removeConsoleLogs(code: string, types: Options['consoleType'], sourceMaps = false) {
+export function removeConsoleLogs(code: string, types: Options['consoleType'], sourceMaps = true) {
   const ast = parser.parse(code, {
     sourceType: 'unambiguous',
     plugins: ['jsx'],
@@ -38,9 +38,13 @@ export function removeConsoleLogs(code: string, types: Options['consoleType'], s
     },
   })
   const mergedGenerator = generator.default ?? generator
-  return mergedGenerator(ast, {
+  const { code: generatorCode, map } = mergedGenerator(ast, {
     sourceMaps,
   })
+  return {
+    generatorCode,
+    map,
+  }
 }
 
 /**

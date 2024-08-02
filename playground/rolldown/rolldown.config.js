@@ -4,9 +4,10 @@ import Rolldown from 'unplugin-remove/rolldown'
 export default defineConfig({
   input: './src/main.ts',
   output: {
-    format: 'es'
+    format: 'esm',
+    sourcemap: true,
   },
   plugins: [
-    process.env.MODE === 'production' ? Rolldown() : null,
-  ].filter(Boolean)
+    process.env.MODE === 'production' ? Rolldown({ sourceMaps: true }) : null,
+  ].filter(Boolean),
 })

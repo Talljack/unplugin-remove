@@ -4,6 +4,7 @@ import createEslintConfig from 'talljack-eslint-config'
 export default createEslintConfig({
   typescript: true,
   formatters: true,
+  markdown: true,
   rules: {
     'antfu/top-level-function': 'off',
     'style/arrow-parens': 'off',
@@ -12,4 +13,5 @@ export default createEslintConfig({
     'no-console': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
   },
+  ignores: ['README.md'],
 })
