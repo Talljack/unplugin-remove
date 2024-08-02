@@ -8,6 +8,6 @@ export default defineConfig({
     sourcemap: true,
   },
   plugins: [
-    process.env.MODE === 'production' ? Rolldown({ sourceMaps: true }) : null,
+    process.env.MODE === 'production' ? Rolldown() : null,
   ].filter(Boolean),
 })

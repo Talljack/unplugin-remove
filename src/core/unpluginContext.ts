@@ -18,7 +18,6 @@ export const createUnpluginContext = (options: Options = {}) => {
     }
     code = removeDebugger(code)
     const { generatorCode } = removeConsoleLogs(code, options.consoleType, true)
-    console.log('generatorCode', generatorCode, id)
     s = new MagicString(generatorCode)
     return {
       code: generatorCode,
