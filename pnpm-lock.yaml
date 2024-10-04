@@ -77,10 +77,10 @@ importers:
         version: 2.11.1
       talljack-eslint-config:
         specifier: ^0.2.6
-        version: 0.2.6(@vue/compiler-sfc@3.4.35)(eslint@9.8.0)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.0.2)(terser@5.31.3))
+        version: 0.2.6(@vue/compiler-sfc@3.5.11)(eslint@9.8.0)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.0.2)(terser@5.31.3))
       tsup:
         specifier: ^8.2.3
-        version: 8.2.3(jiti@1.21.6)(postcss@8.4.40)(tsx@4.16.5)(typescript@5.5.4)(yaml@2.5.0)
+        version: 8.2.3(jiti@1.21.6)(postcss@8.4.47)(tsx@4.16.5)(typescript@5.5.4)(yaml@2.5.0)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -746,25 +746,21 @@ packages:
     resolution: {integrity: sha512-5SJs8qvGzFx9T2E7G9G4NZVG9h44te8mxvGUF1a4ULB4hLEkWXteZQtaCOkPBX15zvFYcDxpv1Z67E2xGv/SUg==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-arm64-musl@0.11.1':
     resolution: {integrity: sha512-VVcRvxW4azA2WA6xFDQaDPUsfP8eFruXoPSBUMRkQdK705tRQVkewQLVvGLP5DhsKTeLDd74WoyWv47mb/IJSQ==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-linux-x64-gnu@0.11.1':
     resolution: {integrity: sha512-4tGYNgNYwXZVVXMlLft+OVXKgwaR6YWsv3low9JZ74Mb8l6MtclcObdl2EDMEhdu+SpDH20xjKSoGv0VLeKT5g==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-x64-musl@0.11.1':
     resolution: {integrity: sha512-HcVRAXvZk60zisPJaTufrlE4oWtPkjR5Ttvpcocx27+Qn7kIZVVsYqhUOYOjjr1Igr6BLF0eJQG+yj0O6OKujg==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-wasm32-wasi@0.11.1':
     resolution: {integrity: sha512-zGF9clT7D2BvHQ3+eTQ8apcHBvw+MtzmnGZeJLVQeciae4JGV0Bf9Mpsi41pGQY/iB3KOzwRlPkxdqwPer035Q==}
@@ -819,55 +815,46 @@ packages:
     resolution: {integrity: sha512-r+SI2t8srMPYZeoa1w0o/AfoVt9akI1ihgazGYPQGRilVAkuzMGiTtexNZkrPkQsyFrvqq/ni8f3zOnHw4hUbA==}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.19.2':
     resolution: {integrity: sha512-+tYiL4QVjtI3KliKBGtUU7yhw0GMcJJuB9mLTCEauHEsqfk49gtUBXGtGP3h1LW8MbaTY6rSFIQV1XOBps1gBA==}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.19.2':
     resolution: {integrity: sha512-OR5DcvZiYN75mXDNQQxlQPTv4D+uNCUsmSCSY2FolLf9W5I4DSoJyg7z9Ea3TjKfhPSGgMJiey1aWvlWuBzMtg==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.19.2':
     resolution: {integrity: sha512-Hw3jSfWdUSauEYFBSFIte6I8m6jOj+3vifLg8EU3lreWulAUpch4JBjDMtlKosrBzkr0kwKgL9iCfjA8L3geoA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.19.2':
     resolution: {integrity: sha512-rhjvoPBhBwVnJRq/+hi2Q3EMiVF538/o9dBuj9TVLclo9DuONqt5xfWSaE6MYiFKpo/lFPJ/iSI72rYWw5Hc7w==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.19.2':
     resolution: {integrity: sha512-EAz6vjPwHHs2qOCnpQkw4xs14XJq84I81sDRGPEjKPFVPBw7fwvtwhVjcZR6SLydCv8zNK8YGFblKWd/vRmP8g==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.19.2':
     resolution: {integrity: sha512-IJSUX1xb8k/zN9j2I7B5Re6B0NNJDJ1+soezjNojhT8DEVeDNptq2jgycCOpRhyGj0+xBn7Cq+PK7Q+nd2hxLA==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.19.2':
     resolution: {integrity: sha512-OgaToJ8jSxTpgGkZSkwKE+JQGihdcaqnyHEFOSAU45utQ+yLruE1dkonB2SDI8t375wOKgNn8pQvaWY9kPzxDQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.19.2':
     resolution: {integrity: sha512-5V3mPpWkB066XZZBgSd1lwozBk7tmOkKtquyCJ6T4LN3mzKENXyBwWNQn8d0Ci81hvlBw5RoFgleVpL6aScLYg==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.19.2':
     resolution: {integrity: sha512-ayVstadfLeeXI9zUPiKRVT8qF55hm7hKa+0N1V6Vj+OTNFfKSoUxyZvzVvgtBxqSb5URQ8sK6fhwxr9/MLmxdA==}
@@ -898,25 +885,21 @@ packages:
     resolution: {integrity: sha512-/24UytJXrK+7CsucDb30GCKYIJ8nG6ceqbJyOtsJv9zeArNLHkxrYGSyjHJIpQfwVN17BPP4RNOi+yIZ3ZgDyA==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@0.7.5':
     resolution: {integrity: sha512-6RcxG42mLM01Pa6UYycACu/Nu9qusghAPUJumb8b8x5TRIDEtklYC5Ck6Rmagm+8E0ucMude2E/D4rMdIFcS3A==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@0.7.5':
     resolution: {integrity: sha512-R0Lu4CJN2nWMW7WzPBuCIju80cQPpcaqwKJDj/quwQySpJJZ6c5qGwB8mntqjxIzZDrNH6u0OkpiUTbvWZj8ww==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@0.7.5':
     resolution: {integrity: sha512-dDgi/ThikMy1m4llxPeEXDCA2I8F8ezFS/eCPLZGU2/J1b4ALwDjuRsMmo+VXSlFCKgIt98V6h1woeg7nu96yg==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-win32-arm64-msvc@0.7.5':
     resolution: {integrity: sha512-nEF4cUdLfgEK6FrgJSJhUlr2/7LY1tmqBNQCFsCjtDtUkQbJIEo1b8edT94G9tJcQoFE4cD+Re30yBYbQO2Thg==}
@@ -1183,14 +1166,26 @@ packages:
   '@vue/compiler-core@3.4.35':
     resolution: {integrity: sha512-gKp0zGoLnMYtw4uS/SJRRO7rsVggLjvot3mcctlMXunYNsX+aRJDqqw/lV5/gHK91nvaAAlWFgdVl020AW1Prg==}
 
+  '@vue/compiler-core@3.5.11':
+    resolution: {integrity: sha512-PwAdxs7/9Hc3ieBO12tXzmTD+Ln4qhT/56S+8DvrrZ4kLDn4Z/AMUr8tXJD0axiJBS0RKIoNaR0yMuQB9v9Udg==}
+
   '@vue/compiler-dom@3.4.35':
     resolution: {integrity: sha512-pWIZRL76/oE/VMhdv/ovZfmuooEni6JPG1BFe7oLk5DZRo/ImydXijoZl/4kh2406boRQ7lxTYzbZEEXEhj9NQ==}
+
+  '@vue/compiler-dom@3.5.11':
+    resolution: {integrity: sha512-pyGf8zdbDDRkBrEzf8p7BQlMKNNF5Fk/Cf/fQ6PiUz9at4OaUfyXW0dGJTo2Vl1f5U9jSLCNf0EZJEogLXoeew==}
 
   '@vue/compiler-sfc@3.4.35':
     resolution: {integrity: sha512-xacnRS/h/FCsjsMfxBkzjoNxyxEyKyZfBch/P4vkLRvYJwe5ChXmZZrj8Dsed/752H2Q3JE8kYu9Uyha9J6PgA==}
 
+  '@vue/compiler-sfc@3.5.11':
+    resolution: {integrity: sha512-gsbBtT4N9ANXXepprle+X9YLg2htQk1sqH/qGJ/EApl+dgpUBdTv3yP7YlR535uHZY3n6XaR0/bKo0BgwwDniw==}
+
   '@vue/compiler-ssr@3.4.35':
     resolution: {integrity: sha512-7iynB+0KB1AAJKk/biENTV5cRGHRdbdaD7Mx3nWcm1W8bVD6QmnH3B4AHhQQ1qZHhqFwzEzMwiytXm3PX1e60A==}
+
+  '@vue/compiler-ssr@3.5.11':
+    resolution: {integrity: sha512-P4+GPjOuC2aFTk1Z4WANvEhyOykcvEd5bIj2KVNGKGfM745LaXGr++5njpdBTzVz5pZifdlR1kpYSJJpIlSePA==}
 
   '@vue/reactivity@3.4.35':
     resolution: {integrity: sha512-Ggtz7ZZHakriKioveJtPlStYardwQH6VCs9V13/4qjHSQb/teE30LVJNrbBVs4+aoYGtTQKJbTe4CWGxVZrvEw==}
@@ -1208,6 +1203,9 @@ packages:
 
   '@vue/shared@3.4.35':
     resolution: {integrity: sha512-hvuhBYYDe+b1G8KHxsQ0diDqDMA8D9laxWZhNAjE83VZb5UDaXl9Xnz7cGdDSyiHM90qqI/CyGMcpBpiDy6VVQ==}
+
+  '@vue/shared@3.5.11':
+    resolution: {integrity: sha512-W8GgysJVnFo81FthhzurdRAWP/byq3q2qIw70e0JWblzVhjgOMiC2GyovXrZTFQJnFVryYaKGP3Tc9vYzYm6PQ==}
 
   '@webassemblyjs/ast@1.12.1':
     resolution: {integrity: sha512-EKfMUOPRRUTy5UII4qJDGPpqfwjOmZ5jeGFwid9mnoqIFK+e0vqoi1qH56JpmZSzEL53jKnNzScdmftJyG5xWg==}
@@ -3382,6 +3380,9 @@ packages:
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
+  picocolors@1.1.0:
+    resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
+
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
@@ -3430,6 +3431,10 @@ packages:
 
   postcss@8.4.40:
     resolution: {integrity: sha512-YF2kKIUzAofPMpfH6hOi2cGnv/HrUlfucspc7pDyvv7kGdqXrfj8SCl/t8owkEgKEuu8ZcRjSOxFxVLqwChZ2Q==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.4.47:
+    resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -3782,6 +3787,10 @@ packages:
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
+    engines: {node: '>=0.10.0'}
+
+  source-map-js@1.2.1:
+    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
   source-map-support@0.5.21:
@@ -5466,10 +5475,23 @@ snapshots:
       estree-walker: 2.0.2
       source-map-js: 1.2.0
 
+  '@vue/compiler-core@3.5.11':
+    dependencies:
+      '@babel/parser': 7.25.3
+      '@vue/shared': 3.5.11
+      entities: 4.5.0
+      estree-walker: 2.0.2
+      source-map-js: 1.2.1
+
   '@vue/compiler-dom@3.4.35':
     dependencies:
       '@vue/compiler-core': 3.4.35
       '@vue/shared': 3.4.35
+
+  '@vue/compiler-dom@3.5.11':
+    dependencies:
+      '@vue/compiler-core': 3.5.11
+      '@vue/shared': 3.5.11
 
   '@vue/compiler-sfc@3.4.35':
     dependencies:
@@ -5483,10 +5505,27 @@ snapshots:
       postcss: 8.4.40
       source-map-js: 1.2.0
 
+  '@vue/compiler-sfc@3.5.11':
+    dependencies:
+      '@babel/parser': 7.25.3
+      '@vue/compiler-core': 3.5.11
+      '@vue/compiler-dom': 3.5.11
+      '@vue/compiler-ssr': 3.5.11
+      '@vue/shared': 3.5.11
+      estree-walker: 2.0.2
+      magic-string: 0.30.11
+      postcss: 8.4.47
+      source-map-js: 1.2.1
+
   '@vue/compiler-ssr@3.4.35':
     dependencies:
       '@vue/compiler-dom': 3.4.35
       '@vue/shared': 3.4.35
+
+  '@vue/compiler-ssr@3.5.11':
+    dependencies:
+      '@vue/compiler-dom': 3.5.11
+      '@vue/shared': 3.5.11
 
   '@vue/reactivity@3.4.35':
     dependencies:
@@ -5511,6 +5550,8 @@ snapshots:
       vue: 3.4.35(typescript@5.5.4)
 
   '@vue/shared@3.4.35': {}
+
+  '@vue/shared@3.5.11': {}
 
   '@webassemblyjs/ast@1.12.1':
     dependencies:
@@ -6658,9 +6699,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-processor-vue-blocks@0.1.2(@vue/compiler-sfc@3.4.35)(eslint@9.8.0):
+  eslint-processor-vue-blocks@0.1.2(@vue/compiler-sfc@3.5.11)(eslint@9.8.0):
     dependencies:
-      '@vue/compiler-sfc': 3.4.35
+      '@vue/compiler-sfc': 3.5.11
       eslint: 9.8.0
 
   eslint-rule-composer@0.3.0: {}
@@ -7945,6 +7986,8 @@ snapshots:
 
   picocolors@1.0.1: {}
 
+  picocolors@1.1.0: {}
+
   picomatch@2.3.1: {}
 
   pidtree@0.6.0: {}
@@ -7963,12 +8006,12 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.40)(tsx@4.16.5)(yaml@2.5.0):
+  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.16.5)(yaml@2.5.0):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.6
-      postcss: 8.4.40
+      postcss: 8.4.47
       tsx: 4.16.5
       yaml: 2.5.0
 
@@ -7982,6 +8025,12 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+
+  postcss@8.4.47:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.1.0
+      source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
 
@@ -8427,6 +8476,8 @@ snapshots:
 
   source-map-js@1.2.0: {}
 
+  source-map-js@1.2.1: {}
+
   source-map-support@0.5.21:
     dependencies:
       buffer-from: 1.1.2
@@ -8594,7 +8645,7 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.3
 
-  talljack-eslint-config@0.2.6(@vue/compiler-sfc@3.4.35)(eslint@9.8.0)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.0.2)(terser@5.31.3)):
+  talljack-eslint-config@0.2.6(@vue/compiler-sfc@3.5.11)(eslint@9.8.0)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.0.2)(terser@5.31.3)):
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -8620,7 +8671,7 @@ snapshots:
       eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)(vitest@2.0.5(@types/node@22.0.2)(terser@5.31.3))
       eslint-plugin-vue: 9.27.0(eslint@9.8.0)
       eslint-plugin-yml: 1.14.0(eslint@9.8.0)
-      eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.35)(eslint@9.8.0)
+      eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.5.11)(eslint@9.8.0)
       eslint-typegen: 0.2.4(eslint@9.8.0)
       local-pkg: 0.5.0
       picocolors: 1.0.1
@@ -8736,7 +8787,7 @@ snapshots:
 
   tslib@2.6.3: {}
 
-  tsup@8.2.3(jiti@1.21.6)(postcss@8.4.40)(tsx@4.16.5)(typescript@5.5.4)(yaml@2.5.0):
+  tsup@8.2.3(jiti@1.21.6)(postcss@8.4.47)(tsx@4.16.5)(typescript@5.5.4)(yaml@2.5.0):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -8748,14 +8799,14 @@ snapshots:
       globby: 11.1.0
       joycon: 3.1.1
       picocolors: 1.0.1
-      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.40)(tsx@4.16.5)(yaml@2.5.0)
+      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.16.5)(yaml@2.5.0)
       resolve-from: 5.0.0
       rollup: 4.19.2
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.4.40
+      postcss: 8.4.47
       typescript: 5.5.4
     transitivePeerDependencies:
       - jiti
